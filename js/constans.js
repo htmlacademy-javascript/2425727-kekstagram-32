@@ -151,4 +151,4 @@ const successTemplate = document.querySelector('#success').content.querySelector
 const sendedErrorTemplate = document.querySelector('#error').content.querySelector('.error');
 const TIMEOUT_TIME = 5000;
 
-export { BASE_URL, Route, Method, ErrorText
+export { BASE_URL, Route, Method, ErrorTextApi, objectList, objectTemplate, bigPictureModal, bigPictureImage, bigPictureLikes, bigPictureCloseButton, bigPictureSocialCaption, bigPictureShowedComments, bigPictureTotalComments, bigPictureSocialComments, bigPictureCommentsLoader, uploadForm, uploadInput, uploadOverlay, uploadCloseButton, uploadInputHashtag, uploadInputDescription, SubmitButtonText, submitButton, scaleControlBigger, scaleControlSmaller, scaleControlValue,imgUploadPreview, slider, sliderEffectLevel, sliderEffectValue, effectsList, MIN_SCALE_COUNT, MAX_DESCRIPTION_LENGTH, MAX_HASHTAGS_COUNT, MAX_HASHTAG_LENGTH, SCALE_STEP, MAX_SCALE_COUNT, sliderEffectsData, DELAY_TIME, hashtagRegular, ErrorText, ErrorValidation, imgFilters, filterForm, MAX_RANDOM_FILTER_COUNT, dataErrorTemplate, successTemplate, sendedErrorTemplate, TIMEOUT_TIME, previewThumbnails, FILE_TYPES };
