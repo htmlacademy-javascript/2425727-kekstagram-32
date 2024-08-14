@@ -1,4 +1,5 @@
-none : {
+const sliderEffectsData = {
+  none : {
     value: 'none',
     filter: 'none',
   },
@@ -118,7 +119,6 @@ const slider = uploadForm.querySelector('.effect-level__slider');
 const sliderEffectValue = uploadForm.querySelector('.effect-level__value');
 const sliderEffectLevel = uploadForm.querySelector('.img-upload__effect-level');
 const effectsList = uploadForm.querySelector('.effects__list');
-const sliderEffectsData = {  
 // предпросмотр загруженного изображения
 const previewThumbnails = uploadForm.querySelectorAll('.effects__preview');
 const FILE_TYPES = ['jpg', 'jpeg', 'png', 'webp'];
