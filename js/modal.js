@@ -41,7 +41,7 @@ const showComments = (comArr) => {
 
     bigPictureShowedComments.textContent = end;
 
-    end += end;
+    end += 5;
   };
 };
 
