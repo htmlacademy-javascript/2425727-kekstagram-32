@@ -1,53 +1,3 @@
-// API
-const BASE_URL = 'https://32.javascript.htmlacademy.pro/kekstagram';
-const Route = {
-  GET_DATA: '/data',
-  SEND_DATA: '/',
-};
-const Method = {
-  GET: 'GET',
-  POST: 'POST',
-};
-const ErrorTextApi = {
-  GET_DATA: 'Не удалось загрузить данные. Попробуйте перезагрузить страницу.',
-  SEND_DATA: 'Не удалось загрузить изображение.'
-};
-// миниатюры
-const objectList = document.querySelector('.pictures');
-const objectTemplate = document.querySelector('#picture').content.querySelector('.picture');
-// построение модального окна с большим Фото
-const bigPictureModal = document.querySelector('.big-picture');
-const bigPictureImage = bigPictureModal.querySelector('.big-picture__img img');
-const bigPictureLikes = bigPictureModal.querySelector('.likes-count');
-const bigPictureCloseButton = bigPictureModal.querySelector('.big-picture__cancel');
-const bigPictureSocialCaption = bigPictureModal.querySelector('.social__caption');
-const bigPictureShowedComments = bigPictureModal.querySelector('.social__comment-shown-count');
-const bigPictureTotalComments = bigPictureModal.querySelector('.social__comment-total-count');
-const bigPictureSocialComments = bigPictureModal.querySelector('.social__comments');
-const bigPictureCommentsLoader = bigPictureModal.querySelector('.comments-loader');
-// форма
-const uploadForm = document.querySelector('.img-upload__form');
-const uploadInput = uploadForm.querySelector('.img-upload__input');
-const submitButton = uploadForm.querySelector('.img-upload__submit');
-const uploadOverlay = uploadForm.querySelector('.img-upload__overlay');
-const uploadCloseButton = uploadForm.querySelector('.img-upload__cancel');
-const SubmitButtonText = {
-  IDLE: 'ОПУБЛИКОВАТЬ',
-  SENDING: 'ПУБЛИКУЮ...'
-};
-// скейл превью
-const scaleControlSmaller = uploadForm.querySelector('.scale__control--smaller');
-const scaleControlBigger = uploadForm.querySelector('.scale__control--bigger');
-const scaleControlValue = uploadForm.querySelector('.scale__control--value');
-const imgUploadPreview = uploadForm.querySelector('.img-upload__preview img');
-const MIN_SCALE_COUNT = 25;
-const MAX_SCALE_COUNT = 100;
-const SCALE_STEP = 25;
-// слайдер эффектов
-const slider = uploadForm.querySelector('.effect-level__slider');
-const sliderEffectValue = uploadForm.querySelector('.effect-level__value');
-const sliderEffectLevel = uploadForm.querySelector('.img-upload__effect-level');
-const effectsList = uploadForm.querySelector('.effects__list');
 const sliderEffectsData = {
   none : {
     value: 'none',
@@ -119,6 +69,56 @@ const sliderEffectsData = {
     connect: 'lower',
   },
 };
+// API
+const BASE_URL = 'https://32.javascript.htmlacademy.pro/kekstagram';
+const Route = {
+  GET_DATA: '/data',
+  SEND_DATA: '/',
+};
+const Method = {
+  GET: 'GET',
+  POST: 'POST',
+};
+const ErrorTextApi = {
+  GET_DATA: 'Не удалось загрузить данные. Попробуйте перезагрузить страницу.',
+  SEND_DATA: 'Не удалось загрузить изображение.'
+};
+// миниатюры
+const objectList = document.querySelector('.pictures');
+const objectTemplate = document.querySelector('#picture').content.querySelector('.picture');
+// построение модального окна с большим Фото
+const bigPictureModal = document.querySelector('.big-picture');
+const bigPictureImage = bigPictureModal.querySelector('.big-picture__img img');
+const bigPictureLikes = bigPictureModal.querySelector('.likes-count');
+const bigPictureCloseButton = bigPictureModal.querySelector('.big-picture__cancel');
+const bigPictureSocialCaption = bigPictureModal.querySelector('.social__caption');
+const bigPictureShowedComments = bigPictureModal.querySelector('.social__comment-shown-count');
+const bigPictureTotalComments = bigPictureModal.querySelector('.social__comment-total-count');
+const bigPictureSocialComments = bigPictureModal.querySelector('.social__comments');
+const bigPictureCommentsLoader = bigPictureModal.querySelector('.comments-loader');
+// форма
+const uploadForm = document.querySelector('.img-upload__form');
+const uploadInput = uploadForm.querySelector('.img-upload__input');
+const submitButton = uploadForm.querySelector('.img-upload__submit');
+const uploadOverlay = uploadForm.querySelector('.img-upload__overlay');
+const uploadCloseButton = uploadForm.querySelector('.img-upload__cancel');
+const SubmitButtonText = {
+  IDLE: 'ОПУБЛИКОВАТЬ',
+  SENDING: 'ПУБЛИКУЮ...'
+};
+// скейл превью
+const scaleControlSmaller = uploadForm.querySelector('.scale__control--smaller');
+const scaleControlBigger = uploadForm.querySelector('.scale__control--bigger');
+const scaleControlValue = uploadForm.querySelector('.scale__control--value');
+const imgUploadPreview = uploadForm.querySelector('.img-upload__preview img');
+const MIN_SCALE_COUNT = 25;
+const MAX_SCALE_COUNT = 100;
+const SCALE_STEP = 25;
+// слайдер эффектов
+const slider = uploadForm.querySelector('.effect-level__slider');
+const sliderEffectValue = uploadForm.querySelector('.effect-level__value');
+const sliderEffectLevel = uploadForm.querySelector('.img-upload__effect-level');
+const effectsList = uploadForm.querySelector('.effects__list');
 // предпросмотр загруженного изображения
 const previewThumbnails = uploadForm.querySelectorAll('.effects__preview');
 const FILE_TYPES = ['jpg', 'jpeg', 'png', 'webp'];

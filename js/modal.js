@@ -84,11 +84,10 @@ bigPictureCloseButton.addEventListener('click', () => {
   closeModal();
 });
 
-// закрытие модалки по клику не на модалку
-// bigPictureModal.addEventListener('click', (evt) => {
-//   if(evt.target === bigPictureModal) {
-//     closeModal();
-//   }
-// });
+bigPictureModal.addEventListener('click', (evt) => {
+  if(evt.target === bigPictureModal) {
+    closeModal();
+  }
+});
 
 export {openModal, createBigPicture};
