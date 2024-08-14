@@ -27,8 +27,7 @@ const getObjectComments = (comArr) => {
 
 const showComments = (comArr) => {
   const start = 0;
-  const end = 5;
-  let end = start + end;
+  let end = start + 5;
   return function () {
     if(end >= comArr.length){
       end = comArr.length;
