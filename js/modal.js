@@ -27,7 +27,8 @@ const getObjectComments = (comArr) => {
 
 const showComments = (comArr) => {
   const start = 0;
-  let end = start + 5;
+  const end = 5;
+  let end = start + end;
   return function () {
     if(end >= comArr.length){
       end = comArr.length;
@@ -41,7 +42,7 @@ const showComments = (comArr) => {
 
     bigPictureShowedComments.textContent = end;
 
-    end += 5;
+    end += start;
   };
 };
 
