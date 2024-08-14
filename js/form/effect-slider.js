@@ -23,7 +23,6 @@ noUiSlider.create(slider, {
   }
 });
 
-const none = '0';
 let currentEffect = 'none';
 
 slider.noUiSlider.on('update', () => {
